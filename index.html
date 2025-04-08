@@ -1,137 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- 
-
-  <meta name="monetag" content="4b92de2a59155e7c0a54467b2e0ef788">
-  <script src="https://kulroakonsu.net/88/tag.min.js" data-zone="141273" async data-cfasync="false"></script>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>සැප ලෝකේ</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <script>
-  // Disable right-click
-  document.addEventListener("contextmenu", e => e.preventDefault());
-
-  // Disable F12, Ctrl+Shift+I, Ctrl+U, Ctrl+S
-  document.addEventListener("keydown", e => {
-    if (
-      e.key === "F12" ||
-      (e.ctrlKey && e.shiftKey && ["I", "J", "C"].includes(e.key.toUpperCase())) ||
-      (e.ctrlKey && ["U", "S"].includes(e.key.toUpperCase()))
-    ) {
-      e.preventDefault();
-    }
-  });
-</script>
-
-
-
-  
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Popup Message Example</title>
   <style>
-    .popup {
-      position: fixed;
-      top: 10px;
-      right: 600px;
-      background-color: #111;
-      color: #fff;
-      padding: 15px 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #ff00cc;
-      z-index: 9999;
-      font-family: sans-serif;
-      animation: fadeInOut 10s ease-in-out forwards;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-    @keyframes fadeInOut {
-      0% { opacity: 0; transform: translateY(-20px); }
-      10% { opacity: 1; transform: translateY(0); }
-      90% { opacity: 1; transform: translateY(0); }
-      100% { opacity: 0; transform: translateY(-20px); display: none; }
-    }
-  </style>
-</head>
-<body>
-
-<div class="popup" id="welcomeMessage">
-  🚨 හැමදාම අලුත් ඒවා දානවා.. ඒනිසා අනිවාරෙන් වෙබ් සයිට් එකත් එක්ක update එකේ ඉන්න...  <br>
-  🔔 ඒවගේම අපේ ටෙලිග්‍රෑම් චැනල් එකටත් ජොයින් වෙලා ඉන්න.<br>
-  👉 <a href="https://t.me/+reCvNcW2iIg1MTM1" style="color: #0ff; text-decoration: underline;">Join </a>
-</div>
-
-</body>
-</html>
-
-  
-  
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Neon Web Gallery</title>
-  <style>
     body {
-      background-color: #000000;
       font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: #fff;
+      padding: 10px;
+    }
+
+    .header {
       text-align: center;
-      padding-top: 100px;
+      margin-bottom: 20px;
     }
 
-    .neon-heading {
-      position: relative;
+    .header h1 {
+      font-size: 2rem;
+      color: #ff00cc;
+      text-shadow: 0 0 10px #ff00cc;
+    }
+
+    .header p {
+      font-size: 1rem;
+      margin: 10px 0;
+    }
+
+    .telegram-btn {
+      background-color: #6200ea;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
       display: inline-block;
-      font-size: 2.5em;
-      font-weight: bold;
-      padding: 20px 40px;
-      color: #f0f0f0;
-      border-radius: 15px;
-      background: #111;
-      text-shadow: 0 0 5px #ff00cc, 0 0 10px #ff00cc, 0 0 15px #ff00cc, 0 0 20px #ff1aff;
-      box-shadow: 0 0 15px #ff00cc66;
-      cursor: pointer;
-      overflow: hidden;
-      transition: all 0.3s ease-in-out;
+      margin-top: 10px;
     }
 
-    .neon-heading::before {
-      content: "වරෙන් බන්ඩො දණ්ඩ කෙලින් කොරගන්ට";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      color: #00ffcc;
-      font-size: 0.75em;
-      padding: 0 10px;
-      text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 20px #00ffcc;
-      background-color: #111;
+    .gallery {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      opacity: 0;
-      transform: scale(1.2);
-      transition: opacity 0.5s ease, transform 0.5s ease;
+      flex-direction: column;
+      gap: 20px;
     }
 
-    .neon-heading:hover::before {
-      opacity: 1;
-      transform: scale(1);
+    .card {
+      background-color: #111;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 0 10px #ff00cc66;
     }
 
-    .neon-heading span {
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card p {
+      margin: 10px 0;
+      font-size: 1rem;
+    }
+
+    .btn {
       display: inline-block;
-      transition: opacity 0.5s ease;
+      background-color: #e91e63;
+      color: white;
+      padding: 8px 12px;
+      margin: 5px 5px 0 0;
+      border-radius: 5px;
+      text-decoration: none;
     }
 
-    .neon-heading:hover span {
-      opacity: 0;
+    @media (min-width: 600px) {
+      .gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .card {
+        width: 48%;
+      }
+    }
+
+    @media (min-width: 900px) {
+      .card {
+        width: 30%;
+      }
     }
   </style>
 </head>
