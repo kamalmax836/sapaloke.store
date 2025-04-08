@@ -1,144 +1,115 @@
 body {
-    background-color: #000;
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-top: 30px;
-    color: #fff;
-  }
-  
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;        /* 👉 අලුත් line එකට යන්න මෙය වැදගත් */
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  .card {
-    background-color: #111;
-    width: 220px;            /* 👉 fixed width එකක් තියෙන්න ඕන */
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(255,255,255,0.1);
-  }
-  
-  .card img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  .card p {
-    margin: 10px 0;
-    color: #f5f5f5;
-  }
-  
-  .btn {
-    display: block;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 10px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .red {
-    background-color: #e53935;
-  }
-  
-  .blue {
-    background-color: #1e88e5;
-  }
-  .admin-upload {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-  
-  .btn.green {
-    background-color: #05750b;
-    padding: 10px 15px;
-    border-radius: 10px;
-    color: rgb(14, 3, 3);
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 0 10px rgba(37, 175, 37, 0.3);
-    transition: background-color 0.8s
-  }
-  
-  .btn.green:hover {
-    background-color: #2e7d32;
-  }
-  @keyframes glow {
-    0% {
-      box-shadow: 0 0 5px #43a047, 0 0 10px #43a047, 0 0 15px #43a047;
-    }
-    50% {
-      box-shadow: 0 0 20px #76ff03, 0 0 30px #76ff03, 0 0 40px #76ff03;
-    }
-    100% {
-      box-shadow: 0 0 5px #43a047, 0 0 10px #43a047, 0 0 15px #43a047;
-    }
-  }
-  
-  .btn.green {
-    background-color: #43a047;
-    padding: 10px 15px;
-    border-radius: 10px;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-weight: bold;
-    animation: glow 2s infinite;
-    transition: background-color 0.3s;
-  }
-  .animated-bg {
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #0f2027);
-    background-size: 400% 400%;
-    animation: gradientFlow 15s ease infinite;
-    color: white;
-    font-family: sans-serif;
-  }
-  
-  @keyframes gradientFlow {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-/* Example: Make video player or content fit screen */
-body {
   background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #1b1b1b);
   background-size: 400% 400%;
   animation: gradientBG 10s ease infinite;
+  color: white;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 @keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #111;
+  width: 100%;
+  max-width: 220px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card p {
+  margin: 10px 0;
+  color: #f5f5f5;
+}
+
+.btn {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.red {
+  background-color: #e53935;
+}
+
+.blue {
+  background-color: #1e88e5;
+}
+
+.admin-upload {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.btn.green {
+  background-color: #43a047;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  animation: glow 2s infinite;
+  transition: background-color 0.3s;
+  box-shadow: 0 0 10px rgba(37, 175, 37, 0.3);
+}
+
+@keyframes glow {
   0% {
-    background-position: 0% 50%;
+    box-shadow: 0 0 5px #43a047, 0 0 10px #43a047, 0 0 15px #43a047;
   }
   50% {
-    background-position: 100% 50%;
+    box-shadow: 0 0 20px #76ff03, 0 0 30px #76ff03, 0 0 40px #76ff03;
   }
   100% {
-    background-position: 0% 50%;
+    box-shadow: 0 0 5px #43a047, 0 0 10px #43a047, 0 0 15px #43a047;
   }
 }
 
+/* 🔁 Mobile Responsive Styles */
+@media (max-width: 600px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
 
-  
+  .card {
+    max-width: 90%;
+  }
+
+  .admin-upload {
+    position: static;
+    margin: 10px auto;
+    text-align: center;
+  }
+}
