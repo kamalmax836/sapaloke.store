@@ -1,112 +1,82 @@
 <!DOCTYPE html>
-<html lang="si">
+<html lang="en">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+
+
+  <meta name="monetag" content="4b92de2a59155e7c0a54467b2e0ef788">
+  <script src="https://kulroakonsu.net/88/tag.min.js" data-zone="141273" async data-cfasync="false"></script>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>සැප ලෝකේ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script>
+  // Disable right-click
+  document.addEventListener("contextmenu", e => e.preventDefault());
+
+  // Disable F12, Ctrl+Shift+I, Ctrl+U, Ctrl+S
+  document.addEventListener("keydown", e => {
+    if (
+      e.key === "F12" ||
+      (e.ctrlKey && e.shiftKey && ["I", "J", "C"].includes(e.key.toUpperCase())) ||
+      (e.ctrlKey && ["U", "S"].includes(e.key.toUpperCase()))
+    ) {
+      e.preventDefault();
+    }
+  });
+</script>
+
+
+
+  
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta charset="UTF-8">
+  <title>Popup Message Example</title>
   <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    .neon-heading {
-      margin: 60px 20px 20px;
-      font-size: 7vw;
-      color: #f0f0f0;
-      text-shadow: 0 0 10px #ff00cc;
-    }
-
     .popup {
+      position: fixed;
+      top: 10px;
+      right: 600px;
       background-color: #111;
       color: #fff;
-      padding: 10px;
-      margin: 10px auto;
-      width: 90%;
+      padding: 15px 20px;
       border-radius: 10px;
       box-shadow: 0 0 10px #ff00cc;
+      z-index: 9999;
+      font-family: sans-serif;
       animation: fadeInOut 10s ease-in-out forwards;
     }
 
     @keyframes fadeInOut {
       0% { opacity: 0; transform: translateY(-20px); }
       10% { opacity: 1; transform: translateY(0); }
-      90% { opacity: 1; }
-      100% { opacity: 0; transform: translateY(-20px); }
-    }
-
-    .btn {
-      display: block;
-      width: 90%;
-      margin: 15px auto;
-      padding: 15px;
-      font-size: 5vw;
-      background-color: #f00;
-      color: #fff;
-      border: none;
-      border-radius: 10px;
-      text-decoration: none;
-      box-shadow: 0 0 10px #f00;
-    }
-
-    .telegram-links {
-      margin: 20px auto;
-    }
-
-    .telegram-links a {
-      display: block;
-      background-color: #6257f1;
-      color: #fff;
-      padding: 10px;
-      margin: 10px auto;
-      border-radius: 8px;
-      width: 90%;
-      box-shadow: 0 0 5px #000;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 10px;
+      90% { opacity: 1; transform: translateY(0); }
+      100% { opacity: 0; transform: translateY(-20px); display: none; }
     }
   </style>
 </head>
 <body>
 
-  <div class="popup">
-    🚨 හැමදාම අලුත් video දානවා! Join වෙන්න Telegram චැනලයට 👉 
-    <a href="https://t.me/+reCvNcW2iIg1MTM1" style="color: #0ff;">Join</a>
-  </div>
+<div class="popup" id="welcomeMessage">
+  🚨 හැමදාම අලුත් ඒවා දානවා.. ඒනිසා අනිවාරෙන් වෙබ් සයිට් එකත් එක්ක update එකේ ඉන්න...  <br>
+  🔔 ඒවගේම අපේ ටෙලිග්‍රෑම් චැනල් එකටත් ජොයින් වෙලා ඉන්න.<br>
+  👉 <a href="https://t.me/+reCvNcW2iIg1MTM1" style="color: #0ff; text-decoration: underline;">Join </a>
+</div>
 
-  <div class="neon-heading">සැප ලෝකේ</div>
-
-  <div class="telegram-links">
-    <a href="https://t.me/+reCvNcW2iIg1MTM1">Telegram Join වෙන්න</a>
-    <a href="https://t.me/+reCvNcW2iIg1MTM1">Video බලන්න තේරෙන්නෙ නැති අය CLICK</a>
-  </div>
-
-  <div>
-    <img src="sample-image.jpg" alt="Video preview">
-    <a class="btn" href="#">01 VID →</a>
-    <a class="btn" href="#">02 VID →</a>
-  </div>
-
-  <div>
-    <a href="https://t.me/sapaloke_admin_bot" class="btn" style="background-color: green;">ඇඩ්මින්ට video/photo එවන්න</a>
-  </div>
-
-
-
+</body>
+</html>
 
   
   
-
+    <!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <title>Neon Web Gallery</title>
   <style>
@@ -168,12 +138,15 @@
       opacity: 0;
     }
   </style>
+</head>
+<body>
 
   <div class="neon-heading" data-text="වරෙන් බන්ඩො දණ්ඩ කෙලින් කොරගන්ට">
     <span>සැප ලෝකේ</span>
   </div>
 
-
+</body>
+</html>
 
 <div style="position: absolute; top: 20px; left: 20px;">
   <a href="https://t.me/+reCvNcW2iIg1MTM1"  arget="_blank" style="background-color: rgb(97, 87, 241); color: rgb(255, 255, 255); padding: 5px 5px; border-radius: 5px; font-weight: bold; text-decoration: none; box-shadow: 0 0 5px #000;"> 
